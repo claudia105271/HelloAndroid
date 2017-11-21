@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"/>
+
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Join Udacity to learn the latest in Deep Learning, Machine Learning, Web Development and more, with Nanodegree programs and free online courses. "
+    />
+
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/phone_value"
+        android:background="#039BE5"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text="Phone:"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/white"
+    />
+
+    <TextView
+        android:id="@+id/phone_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/address"
+        android:text="650-555-5555"
+        android:padding = "5dp"
+        android:layout_above="@id/website_value"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="5dp"
+        />
+
+    <TextView
+        android:id="@+id/website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Website:"
+        android:padding="5dp"
+        android:background="#039BE5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@id/address_value"
+        android:textColor="@android:color/white"
+        />
+
+    <TextView
+        android:id="@+id/website_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/address"
+        android:text="www.udacity.com"
+        android:padding = "5dp"
+        android:layout_above="@id/address_value"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="5dp"
+        />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address:"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:background="#039BE5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@android:color/white"
+        />
+
+    <TextView
+        android:id="@+id/address_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/address"
+        android:text="2465 Latham St Mountain View, CA 94043"
+        android:padding = "5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="30dp"
+        />
+
+
+</RelativeLayout>
